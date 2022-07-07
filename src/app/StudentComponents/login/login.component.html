@@ -5,29 +5,35 @@
             <div class="card shadow">
                 <div class="card-body">
                     <form>
+
                         <div class="mb-3">
                             <h4 class="text-dark text-muted">Login</h4>
                         </div>
+
                         <div class="form-group">
                           <label for="exampleInputEmail1">Email</label>
                           <input type="email" class="form-control"[(ngModel)]="email" name="email" placeholder="Enter email">
-                          
                         </div>
+
                         <div class="form-group">
                           <label for="exampleInputPassword1">Password</label>
                           <input type="password"  class="form-control" name="password" [(ngModel)]="password" placeholder="Password">
                         </div>
+
                         <br/>
+
                         <button type="submit" (click)="login()" class="btn btn-primary">Login</button>
+
                         <div class="row">
                             <div class="col-md-6">
-                                <a href="/register" style="text-decoration: none;">Need Account? 
+                                <a routerLink="/register" style="text-decoration: none;">Need Account? 
                                     <span class="text-danger">Register</span></a>
                             </div>
                             <div class="col-md-6">
-                                <a href="" class="text-danger" style="text-decoration: none;">Forgot Password</a>
+                                <a routerLink="/forgot-password" class="text-danger" style="text-decoration: none;">Forgot Password</a>
                             </div>
                         </div>
+                        
                       </form>
                 </div>
             </div>
