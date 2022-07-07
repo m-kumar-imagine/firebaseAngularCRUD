@@ -33,7 +33,16 @@
                                 <a routerLink="/forgot-password" class="text-danger" style="text-decoration: none;">Forgot Password</a>
                             </div>
                         </div>
-                        
+                        <div class="row mt-2">
+                            <a  (click)="signInWithGoogle()" style="text-decoration: none;">
+                                <div class="card">
+                                    <div class="card-body">
+                                      <img src="src/app/image/gogleicon.png" height="24px" width="24px"/>  <span>Sign In With Google</span>
+                                    </div>
+                                </div>
+                            </a>
+                           
+                        </div>
                       </form>
                 </div>
             </div>
